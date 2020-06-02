@@ -313,6 +313,62 @@ public class HtmlToPdfObject {
     public HtmlToPdfObject pageCount(boolean pageCount) {
         return setting("pagesCount", pageCount);
     }
+    
+    /**
+     * Centered footer text.
+     */
+    public HtmlToPdfObject footerCenter(String text) {
+        return setting("footer.center", text);
+    }
+
+    /**
+     * Set footer font name (default Arial).
+     */
+    public HtmlToPdfObject footerFontName(String name) {
+      return setting("footer.fontName", name);
+    }
+
+    /**
+     * Set footer font size (default 12).
+     */
+    public HtmlToPdfObject footerFontSize(int size) {
+      return setting("footer.fontSize", size);
+    }
+
+    /**
+     * Adds a html footer.
+     */
+    public HtmlToPdfObject footerHtml(String url) {
+        return setting("footer.htmlUrl", url);
+    }
+
+    /**
+     * Left aligned footer text.
+     */
+    public HtmlToPdfObject footerLeft(String text) {
+      return setting("footer.left", text);
+    }
+
+    /**
+     * Whether or not to add a line beneath the custom footer.
+     */
+    public HtmlToPdfObject footerLine(boolean line) {
+      return setting("footer.line", line);
+    }
+
+    /**
+     * Right aligned footer text.
+     */
+    public HtmlToPdfObject footerRight(String text) {
+      return setting("footer.right", text);
+    }
+
+    /**
+     * The amount of spacing between the footer and the content.
+     */
+    public HtmlToPdfObject footerSpacing(int spacing) {
+      return setting("footer.spacing", spacing);
+    }
 
     private HtmlToPdfObject setting(String name, Object value) {
         return setting(name, value.toString());
