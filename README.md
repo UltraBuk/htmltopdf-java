@@ -1,8 +1,8 @@
 ## Overview
-This project is based on [wkhtmltopdf](https://github.com/wkhtmltopdf/wkhtmltopdf), which converts HTML documents to PDF.
+This project is a fork of wooio and is based on [wkhtmltopdf](https://github.com/wkhtmltopdf/wkhtmltopdf), which converts HTML documents to PDF.
 Access to wkhtmltopdf is performed via JNA, exposed through a Java-friendly layer.
 
-## Get it
+## Get the origin project
 
 Gradle:
 ```groovy
@@ -16,6 +16,23 @@ Maven:
   <artifactId>htmltopdf</artifactId>
   <version>1.0.8</version>
   <scope>compile</scope>
+</dependency>
+```
+
+## Get the fork via jitpack.io
+Maven:
+```xml
+<repositories>
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
+</repositories>
+
+<dependency>
+  <groupId>com.github.UltraBuk</groupId>
+  <artifactId>htmltopdf-java</artifactId>
+  <version>1.0.9.1</version>
 </dependency>
 ```
 
