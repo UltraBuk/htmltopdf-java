@@ -49,6 +49,16 @@ public class HtmlToPdf {
     }
 
     /**
+     * Set default values
+     */
+    public HtmlToPdf setDefaultValues() {
+        disableSmartShrinking(false);
+        marginBottom("25mm");
+        marginTop("25mm");
+        return this;
+    }
+    
+    /**
      * Disable the intelligent shrinking strategy used by WebKit that makes the pixel/dpi ratio none constant
      */
     public HtmlToPdf disableSmartShrinking(boolean disableSmartShrinking) {
