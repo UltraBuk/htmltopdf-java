@@ -60,6 +60,23 @@ public class HtmlToPdfObject {
     }
 
     /**
+     * Set default values
+     */
+    public HtmlToPdfObject setDefaultValues() {
+        blockLocalFileAccess(false);
+        usePrintMediaType(true);
+        headerFontSize(10);
+        headerFontName("Helvetica Neue");
+        headerSpacing(10);
+        headerLine(true);
+        footerFontSize(10);
+        footerFontName("Helvetica Neue");
+        footerSpacing(10);
+        footerLine(true);
+        return this;
+    }
+    
+    /**
      * Whether or not to show the page's background.
      */
     public HtmlToPdfObject showBackground(boolean background) {
