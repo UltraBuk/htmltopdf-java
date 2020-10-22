@@ -32,7 +32,7 @@ Maven:
 <dependency>
   <groupId>com.github.UltraBuk</groupId>
   <artifactId>htmltopdf-java</artifactId>
-  <version>1.0.9.1</version>
+  <version>1.0.9.2</version>
 </dependency>
 ```
 
